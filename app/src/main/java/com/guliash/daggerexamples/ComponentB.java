@@ -1,8 +1,9 @@
 package com.guliash.daggerexamples;
 
-import dagger.Subcomponent;
+import dagger.Component;
 
-@Subcomponent(modules = ModuleB.class)
+@ScopeB
+@Component(dependencies = ComponentA.class)
 public interface ComponentB {
-    void inject(MainActivity activity);
+
 }
