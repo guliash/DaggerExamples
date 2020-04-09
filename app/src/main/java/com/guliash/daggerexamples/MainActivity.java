@@ -44,7 +44,7 @@ class ActivityModule {
     }
 }
 
-@Module(subcomponents = ActivitySubcomponent.class)
+@Module
 abstract class ActivityLinkingModule {
     @Binds
     @IntoMap

@@ -30,4 +30,6 @@ public class MainApplication extends Application implements HasAndroidInjector {
 @Component(modules = { AndroidInjectionModule.class, ActivityLinkingModule.class })
 interface ApplicationComponent {
     void inject(MainApplication application);
+
+    ActivitySubcomponent.Factory activitySubcomponentFactory();
 }
